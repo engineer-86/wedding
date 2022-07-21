@@ -30,8 +30,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  wedding_name: "Jack & Jill's Wedding"
-  wedding_couple_names: 'Jack & Jill'
-  wedding_date: 'Saturday, 1 January 2000'
-  wedding_location: 'South Pole'
+  wedding_name: "Sarah & Konrads Hochzeit"
+  wedding_couple_names: 'Sarah & Konrad'
+  wedding_date: 'Samstag 1. Juli 2023'
+  wedding_location: 'Schloss Ziethen'
   photo_credits: 'Photo Credits: Pexels'

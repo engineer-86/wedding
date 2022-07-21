@@ -70,7 +70,7 @@ Rails.application.configure do
     host: ENV['CANONICAL_HOST'],
     protocol: ENV['CANONICAL_HOST_PROTOCOL'] || 'https'
   }
-
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: ENV['SMTP_ADDRESS'],
     port: (ENV['SMTP_PORT'] || 587).to_i,
@@ -80,6 +80,8 @@ Rails.application.configure do
     authentication: ENV['SMTP_AUTHENTICATION'] || 'plain',
     enable_starttls_auto: ENV['SMTP_ENABLE_STARTTLS_AUTO'] || 'true'
   }
+
+  
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
