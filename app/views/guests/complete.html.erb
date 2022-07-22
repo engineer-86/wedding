@@ -5,7 +5,7 @@
       <h2>Danke!</h2>
       <p>Wir haben dir eine Bestätigung an  <tt><%= @guest.email %></tt>  gesendet.</p>
       
-      <p>Wenn du keine E-Mail bekommen hast, dann warte ein paar Minuten oder überprüfe deinen SPAM-Ordner. Im Fall, dass es nicht funktioniert schicke uns eine <%= mail_to ENV['CONTACT_EMAIL'], 'E-Mail' %>.</p>
+      <p>Wenn du keine E-Mail bekommen hast, dann warte ein paar Minuten oder überprüfe deinen SPAM-Ordner. Für den Fall, dass es nicht funktioniert schicke uns eine <%= mail_to ENV['CONTACT_EMAIL'], 'E-Mail' %>.</p>
       <p>Die E-Mail enthält einen Link mit dem du jederzeit Änderungen durchführen kannst.</p>
       <p><%= link_to 'Zurück zur Hauptseite', root_path %></p>
     </div>

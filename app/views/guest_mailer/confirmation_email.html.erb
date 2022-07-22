@@ -6,7 +6,8 @@
 <address><%= render partial: 'application/wedding_address' %></address>
 
 <h3>Deine Anmeldung</h3>
-<p>Wenn du Änderungen durchführen willst, dann nutzen den folgenden Link:</p>
+<p>Sollte sich etwas ändern, kannst du dies jederzeit bis zum <strong>01.04.2023</strong> ändern.</p>
+<p>Benutze hierzu folgenden Link:</p>
 <p><%= link_to guest_url(@guest), guest_url(@guest) %></p>
 
 <h3>Willst du uns lieber eine Karte zur Anmeldung schicken?</h3>
@@ -16,7 +17,8 @@
 <h3>Fragen und Antworten</h3>
 <p>Bitte besuche <%= link_to 'unsere Hochzeitswebseite', root_url %> für alle Informationen, oder du kannst auf diese E-Mail antworten.</p>
 <% else %>
-<p>Das ist schade, dass du nicht teilnehmen kannst! Sollte sich etwas ändern kannst du dies jederzeit mit dem Link ändern:</p>
+<p>Schade, dass du nicht teilnehmen kannst! Sollte sich etwas ändern, kannst du dies jederzeit bis zum <strong>01.04.2023</strong> ändern.</p>
+<p>Benutze hierzu folgenden Link:</p>
 <p><%= link_to guest_url(@guest), guest_url(@guest) %></p>
 <p>Wir hoffen wir dich bald wieder zu sehen! </p>
 <% end %>
